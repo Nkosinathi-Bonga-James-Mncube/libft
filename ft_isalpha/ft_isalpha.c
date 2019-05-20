@@ -6,18 +6,16 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 10:24:18 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/20 10:46:20 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/20 12:07:31 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdio.h>
-#include <ctype.h>
-int		ft_isalpha(int c)
-{		
-		if (((c >= 64) && (c <= 90)) || (( c >= 97) && (c <= 122)))
-		return c = 1;
-		else
-		return c = 0;
-}
+#include "libft.h"
 
+int		ft_isalpha(int c)
+{
+	if ((c >= 64 && c <= 90) || (c >= 97 && c <= 122))
+		return (c = 1);
+	else
+		return (c = 0);
+}
