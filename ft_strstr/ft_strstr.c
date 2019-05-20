@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/20 15:54:50 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/20 16:07:28 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,20 @@ char *ft_strstr( const char *s1, const char *s2)
 {
 	int bfound;
 	char *s3;
+	
 	bfound = 0;
 	while (*s1 != *s2)
-		s1 ++;
+		s1++;
 	while (*s1 != '\0')
 	{
-	if (*s1 == *s2)
-		bfound = bfound + 0;
-	else
-		bfound = bfound + 1;
+		if (*s1 == *s2)
+			bfound = bfound + 0; 
+		else
+			bfound = bfound + 1;
 		s1++;
 	}
 	if (bfound == 0)
-		s3 = s2;
-		return (s3);
+		return (s2);
 }
 int	main()
 {
