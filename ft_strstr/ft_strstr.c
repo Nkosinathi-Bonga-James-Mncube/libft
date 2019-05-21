@@ -6,13 +6,13 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/20 16:07:28 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/21 16:04:13 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-char *ft_strstr( const char *s1, const char *s2)
+/*char *ft_strstr( const char *s1, const char *s2)
 {
 	int bfound;
 	char *s3;
@@ -30,10 +30,10 @@ char *ft_strstr( const char *s1, const char *s2)
 	}
 	if (bfound == 0)
 		return (s2);
-}
+}*/
 int	main()
 {
-	printf("ft_strstr: %s\n",ft_strstr("bedroom" , "room"));
+	//printf("ft_strstr: %s\n",ft_strstr("bedroom" , "room"));
 	printf("%s\n" , strstr("bedroom","room"));
 	return (0);
 }
