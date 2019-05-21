@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:46:13 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/21 15:05:09 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/21 15:19:33 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <string.h>
@@ -35,9 +35,9 @@ int		main()
 {
 	char *s1;
 	char s2;
-	s1 = "anthai";
+	s1 = "Nathia";
 	s2 = 'a';
-	printf("System : %s\n" ,strrchr (s1, s2));
+	printf("System : %s\n" ,strrchr(s1, s2));
 	printf("ft_system : %s\n" , ft_strrchr(s1, s2));
 	return (0);
 }
