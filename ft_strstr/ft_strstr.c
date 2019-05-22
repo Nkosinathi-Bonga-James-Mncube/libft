@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/22 13:48:43 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/22 13:53:42 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,13 @@ static	char *ft_output(const char *haystack, const char *needle)
 		}
 		k++;
 	}
-	if (needle[0] == '\0')
+	if (needle == blank)
 	return ((char *) haystack);
-	/*else
+	else
 	if (bFound == 0)
 	return (NULL);
 	else
-	return ((char *) haystack);*/
-return (0);	
+	return ((char *) haystack);	
 }
 char	*ft_strstr(const char *haystack, const char *needle)
 {
