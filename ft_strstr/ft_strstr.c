@@ -6,34 +6,49 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/21 16:04:13 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/22 12:37:49 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-/*char *ft_strstr( const char *s1, const char *s2)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int bfound;
-	char *s3;
-	
-	bfound = 0;
-	while (*s1 != *s2)
-		s1++;
-	while (*s1 != '\0')
+	int k;
+	int bFound;
+	k = 0;
+	bFound = 0;
+	while ( *haystack != '\0' )
 	{
-		if (*s1 == *s2)
-			bfound = bfound + 0; 
-		else
-			bfound = bfound + 1;
-		s1++;
+		if ( *haystack != *needle )
+			haystack++;
+			else
+			break ;
 	}
-	if (bfound == 0)
-		return (s2);
-}*/
+	while ( needle[k] != '\0')
+	{
+		if ( needle[k] == haystack[k])
+		bFound = 1;
+		else
+		{
+			bFound = 0;
+			break;
+		}
+		k++;
+	}
+	if ( bFound == 0)
+		return (NULL);
+	else
+		return ((char *) haystack);
+}
 int	main()
 {
-	//printf("ft_strstr: %s\n",ft_strstr("bedroom" , "room"));
-	printf("%s\n" , strstr("bedroom","room"));
+	char *s1;
+	char *s2;
+
+	s1 = "Bed room";
+	s2 = "";
+	printf("ft_stsrt : %s\n" ,ft_strstr (s1 , s2));
+	printf("System: %s\n" , strstr (s1, s2));
 	return (0);
 }
