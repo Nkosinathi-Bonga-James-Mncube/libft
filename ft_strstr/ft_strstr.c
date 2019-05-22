@@ -6,12 +6,42 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/22 12:37:49 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/22 13:48:43 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+
+static	char *ft_output(const char *haystack, const char *needle)
+{
+	int k;
+	const char *blank;
+	int bFound;
+	k = 0;
+	bFound = 0;
+	blank = "";
+
+	while ( needle[k] != '\0')
+	{
+		if ( needle [k] == haystack[k])
+			bFound = 1;
+		else
+		{
+			bFound = 0;
+			break;
+		}
+		k++;
+	}
+	if (needle[0] == '\0')
+	return ((char *) haystack);
+	/*else
+	if (bFound == 0)
+	return (NULL);
+	else
+	return ((char *) haystack);*/
+return (0);	
+}
 char	*ft_strstr(const char *haystack, const char *needle)
 {
 	int k;
@@ -25,28 +55,14 @@ char	*ft_strstr(const char *haystack, const char *needle)
 			else
 			break ;
 	}
-	while ( needle[k] != '\0')
-	{
-		if ( needle[k] == haystack[k])
-		bFound = 1;
-		else
-		{
-			bFound = 0;
-			break;
-		}
-		k++;
-	}
-	if ( bFound == 0)
-		return (NULL);
-	else
-		return ((char *) haystack);
+	return (ft_output(haystack ,needle));
 }
 int	main()
 {
 	char *s1;
 	char *s2;
 
-	s1 = "Bed room";
+	s1 = "Bed roomi";
 	s2 = "";
 	printf("ft_stsrt : %s\n" ,ft_strstr (s1 , s2));
 	printf("System: %s\n" , strstr (s1, s2));
