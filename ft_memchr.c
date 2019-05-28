@@ -6,11 +6,11 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:16:37 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/28 13:36:31 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/05/28 13:40:04 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libf.h"
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
