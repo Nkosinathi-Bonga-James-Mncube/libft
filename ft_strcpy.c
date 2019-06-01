@@ -5,24 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 10:57:25 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/01 14:21:35 by nmncube          ###   ########.fr       */
+/*   Created: 2019/06/01 14:24:15 by nmncube           #+#    #+#             */
+/*   Updated: 2019/06/01 14:28:08 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy( char *dst , const char *scr)
+char	*ft_strcpy(char *dst, const char *scr)
 {
-	int k;
-	char *s1;
-	k = 0;
-	s1= (char*)scr;
+	int		k;
+	char	*s1;
 
+	k = 0;
+	s1 = (char*)scr;
 	while (s1[k] != '\0')
 	{
 		dst[k] = s1[k];
 		k++;
 	}
-	return(dst);
+	return (dst);
 }
