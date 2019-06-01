@@ -6,7 +6,7 @@
 #    By: nmncube <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/01 12:19:34 by nmncube           #+#    #+#              #
-#    Updated: 2019/06/01 13:45:16 by nmncube          ###   ########.fr        #
+#    Updated: 2019/06/01 13:50:51 by nmncube          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re:
-	fclean all
+re: fclean all
 
