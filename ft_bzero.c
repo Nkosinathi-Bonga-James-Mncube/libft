@@ -6,12 +6,11 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 09:06:16 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/01 13:00:29 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/01 14:37:12 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	ft_bzero(void *s, size_t n)
 {
