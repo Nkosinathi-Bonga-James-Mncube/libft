@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:46:18 by event             #+#    #+#             */
-/*   Updated: 2019/06/04 11:46:29 by event            ###   ########.fr       */
+/*   Updated: 2019/06/04 13:26:20 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int		ft_atoi(const char *str)
 		bfound = ft_bfound((char*)str);
 		str++;
 	}
-	while (str[k] >= 48 && str[k] <= 57 && str[k] != '+' || str[k] != '-' && str[k] != '\0')
+	while ((str[k] >= 48 && str[k] <= 57) && (str[k] != '+' || str[k] != '-') && str[k] != '\0')
 	{
 		value = (value * 10) + str[k] - 48;
 		k++;
