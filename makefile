@@ -6,20 +6,20 @@
 #    By: nmncube <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/01 12:19:34 by nmncube           #+#    #+#              #
-#    Updated: 2019/06/01 13:50:51 by nmncube          ###   ########.fr        #
+#    Updated: 2019/06/04 09:36:21 by event            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = "libft.a"
-SRC = ft_*.c
+SRC = ft_*
 OBJ = *.o
 INC = "libft.h"
 
 all : $(NAME)
 
 $(NAME):
-	gcc -Wall -Wextra -Werror $(SRC) $(INC)
+	gcc -c -Wall -Wextra -Werror $(SRC) $(INC)
 	ar rc $(NAME) $(OBJ)
 
 clean:
