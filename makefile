@@ -6,26 +6,26 @@
 #    By: nmncube <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/01 12:19:34 by nmncube           #+#    #+#              #
-#    Updated: 2019/06/04 09:36:21 by event            ###   ########.fr        #
+#    Updated: 2019/06/04 13:22:17 by nmncube          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = "libft.a"
-SRC = ft_*
+SRC = ft_* *.h
 OBJ = *.o
-INC = "libft.h"
 
 all : $(NAME)
 
 $(NAME):
-	gcc -c -Wall -Wextra -Werror $(SRC) $(INC)
-	ar rc $(NAME) $(OBJ)
+		gcc -c -Wall -Wextra -Werror $(SRC)
+		ar rc $(NAME) $(OBJ)
+		ranlib $(NAME)
 
 clean:
-	rm -f $(OBJ)
-fclean: clean
-	rm -f $(NAME)
+		rm -f $(OBJ)
+fclean: 
+		rm -f $(NAME) *.gch
 
 re: fclean all
 
