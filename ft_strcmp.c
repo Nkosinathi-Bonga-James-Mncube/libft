@@ -6,13 +6,13 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:04:09 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/23 13:05:17 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/05 11:18:30 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int total;
 
@@ -21,7 +21,7 @@ int		ft_strcmp(const char *s1, const char *s2)
 	{
 		if (*s1 != *s2)
 		{
-			total = *s1 - *s2;
+			return ((unsigned char)*s1 - (unsigned char)*s2);
 			break ;
 		}
 		s1++;
