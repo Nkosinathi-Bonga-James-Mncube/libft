@@ -6,12 +6,13 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/01 14:00:22 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/05 09:38:13 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 #ifndef LIBFT_H
 #define LIBFT_H
 
@@ -43,4 +44,6 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
 #endif
