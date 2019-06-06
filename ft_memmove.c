@@ -6,31 +6,56 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:16:47 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/28 11:16:10 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/06 16:41:25 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
+size_t ft_strlen(const char *s)
+{
+	size_t k;
+	k = 0;
+	while(s[k]!='\0')
+		k++;
+	return (k);
+}
 void	*ft_memmove(void *dst, const void *scr, size_t len)
 {
-	unsigned char	*s1;
-	unsigned char	*s2;
-	int				k;
-
-	k = len;
-	s1 = (unsigned char*)scr;
-	s2 = (unsigned char *)dst;
-	k = len;
-	while (len > 0 && *s1 != '\0')
+	char	*s1;
+	char	*s2;
+	int		k;
+	size_t	j;
+	j = 0;
+	//char *m = "Nathi";
+	
+	k = (int)len;
+	s1 = (char*)scr;
+	s2 = (char*)dst;
+	j =  ft_strlen((const char*)s2);
+	if ( j == 0 || len == 0)
+		return(dst);	
+	while (len > 0 && j != 0)
 	{
 		*s2 = *s1;
 		s1++;
 		s2++;
 		len--;
 	}
-	if (k > 0)
+	if (k > 0 )
+	{
 		return (dst);
+	}
 	else
 		return (NULL);
 }
+
+/*int	main()
+{
+	char dst[30];
+	char scr[100] = "lorem ipsum dolor sit amet";
+	printf("System : %s\n", memmove(scr,dst,8));
+	printf("ft_memove : %s\n", ft_memmove(scr,dst,8));
+	return(0);
+}*/
