@@ -6,7 +6,7 @@
 #    By: nmncube <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/01 12:19:34 by nmncube           #+#    #+#              #
-#    Updated: 2019/06/04 13:22:17 by nmncube          ###   ########.fr        #
+#    Updated: 2019/06/07 14:56:37 by nmncube          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ $(NAME):
 
 clean:
 		rm -f $(OBJ)
-fclean: 
+fclean: clean
 		rm -f $(NAME) *.gch
 
 re: fclean all
