@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/05 09:38:13 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/07 10:53:20 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,5 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
+void	*ft_memalloc(size_t size);
 #endif
