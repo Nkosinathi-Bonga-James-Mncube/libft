@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/11 12:15:39 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/11 14:57:55 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ void	ft_putstr(char const *s);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 void	ft_putendl(char const *s);
+void	ft_putchar_fd(char c, int fd);
 #endif
