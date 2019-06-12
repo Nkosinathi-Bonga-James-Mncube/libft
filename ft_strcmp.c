@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:04:09 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/05 11:18:30 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/12 13:37:03 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	int total;
-
-	total = 0;
 	while (*s1 != '\0' || *s2 != '\0')
 	{
 		if (*s1 != *s2)
@@ -27,5 +24,5 @@ int	ft_strcmp(const char *s1, const char *s2)
 		s1++;
 		s2++;
 	}
-	return (total);
+	return (0);
 }
