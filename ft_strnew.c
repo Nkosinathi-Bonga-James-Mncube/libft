@@ -1,18 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/12 10:18:47 by nmncube           #+#    #+#             */
+/*   Updated: 2019/06/12 10:46:36 by nmncube          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 char * ft_strnew(size_t size)
 {
-	
 	char *s1;
-	if (size > 0)
-		s1= (char*)malloc(size *sizeof(char));
-	if (s1 != NULL && size > 0)
+	
+	s1 = (char*)malloc(size + 1 * sizeof(char));
+	if (s1 != NULL && size >= 0)
 	{
+		size++;
 		ft_bzero(s1, size);
-		size = size + 1;
-		s1[size] ='\0';
-		return (s1);
+		return ((char*)s1);
 	}
 	else
 		return(NULL);
