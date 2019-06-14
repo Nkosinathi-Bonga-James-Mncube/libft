@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/13 15:40:43 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/14 14:46:48 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,6 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char 	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
-char	**ft_strsplit(char const *s, char c);
+char	*ft_strsplit(char const *s, char c);
+void	ft_putendl_fd(char const *s,int fd);
 #endif
