@@ -3,7 +3,7 @@ void	ft_putnbr(int n)
 {
 	int i;
 	char x;
-	long total;
+	long int total;
 	i = 1000000000;
 	total = 0;
 	x = ' ';
