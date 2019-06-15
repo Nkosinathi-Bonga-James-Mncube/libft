@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/14 16:00:23 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/15 10:21:25 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,5 @@ char 	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	*ft_strsplit(char const *s, char c);
 void	ft_putendl_fd(char const *s,int fd);
+void	ft_putnbr(int n);
 #endif
