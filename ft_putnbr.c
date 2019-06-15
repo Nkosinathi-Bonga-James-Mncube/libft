@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 10:06:38 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/15 10:21:21 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/15 11:26:30 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_putnbr(int n)
 {
-	int i;
-	char x;
-	long int total;
-	long int here;
+	int			i;
+	char		x;
+	long int	total;
+	long int	here;
 
 	i = 1000000000;
 	here = (long int)n;
@@ -27,7 +27,7 @@ void	ft_putnbr(int n)
 	if (n < 0)
 	{
 		write(1, "-", 1);
-		here = here  * -1;
+		here = here * -1;
 	}
 	while (i > here)
 		i = i / 10;
