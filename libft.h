@@ -68,5 +68,6 @@ void	ft_putendl_fd(char const *s,int fd);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
-char	ft_putnbr_int(int n);
+int	ft_int_len(int n);
+char	*ft_loop(int i, char *m, long int n , int k);
 #endif
