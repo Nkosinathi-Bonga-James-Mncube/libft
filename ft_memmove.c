@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:16:47 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/17 15:32:56 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 16:46:02 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,23 @@
 
 void	*ft_memmove(void *dst, const void *scr, size_t len)
 {
-	char *s1;
-	char *s2;
-	int k;
-	
-	s1 =  (char*)dst;
-	s2 = (char*)scr;
-	k = 0;
+	char *scr1;
+	char *dst1;
+
 	if (!dst && !scr)
 		return (NULL);
-	if (dst <= scr)
+	scr1 = (char*)scr;
+	dst1 =(char*)dst;
+	if ( scr1 < dst1)
 	{
-		while (k < (int)len)
-		{
-			s1[k] = s2[k];
-			k++;
-		}
+		scr1 = scr1 + len - 1;
+		dst1 = dst1 + len - 1;
+		while (len-- > 0)
+			*dst1-- = *scr1--;
 	}
 	else
 		while (len-- > 0)
-		{
-			s1[k] = s2[k];
-			k++;
-		}
+		*dst1++ = *scr1++;
 	return (dst);
 }
 
