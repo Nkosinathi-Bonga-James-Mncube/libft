@@ -6,13 +6,13 @@
 #    By: nmncube <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/01 12:19:34 by nmncube           #+#    #+#              #
-#    Updated: 2019/06/07 14:56:37 by nmncube          ###   ########.fr        #
+#    Updated: 2019/06/17 10:17:43 by nmncube          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-NAME = "libft.a"
-SRC = ft_* *.h
+NAME = libft.a
+SRC = *.c *.h
 OBJ = *.o
 
 all : $(NAME)
