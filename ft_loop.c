@@ -9,5 +9,6 @@ char *ft_loop(int i, char *m , long int total, int k)
 		i = i / 10;
 		k++;
 	}
+	m[k] = '\0';
 	return (m);
 }

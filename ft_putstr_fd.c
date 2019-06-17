@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 15:14:20 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/11 15:26:06 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 13:16:28 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void ft_putstr_fd(char const *s, int fd)
 	int k;
 
 	k = 0;
+	if (!s)
+		return ((void)NULL);
 	while (s[k] != '\0')
 	{
 		write(fd,&s[k],1);

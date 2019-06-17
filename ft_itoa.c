@@ -10,7 +10,9 @@ char *ft_itoa(int n)
 	i = 1000000000;
 	k = 0;
 	total = (long int)n;
-	m = ft_memalloc((size_t)ft_int_len(total));
+	m = (char*)malloc(ft_int_len(n) + 1 * sizeof(char));
+	if (m == NULL)
+		return (NULL);
 	if (total == 0)
 		return((char*)ft_memset(m,'0',ft_int_len(total)));
 	if (total < 0)

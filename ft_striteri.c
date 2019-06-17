@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 12:20:44 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/12 12:35:02 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 14:29:28 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	int k;
 
 	k = 0;
+	if (!s)
+		return ((void)NULL);
 	while (s[k] != '\0')
 	{
 		f(k, &s[k]);

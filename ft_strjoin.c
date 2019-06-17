@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/13 12:23:41 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/13 14:15:20 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 13:33:45 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	l = 0;
 	k = 0;
+	if (!s1 || !s2)
+		return (NULL);
 	m = (char*)malloc((ft_strlen(s1) + ft_strlen(s2) + 1)*sizeof(char));
 	if (m == NULL)
 		return(NULL);

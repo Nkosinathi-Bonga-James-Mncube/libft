@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 10:54:05 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/12 11:01:27 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 14:31:15 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_strclr(char *s)
 	size_t k;
 
 	k = 0;
+	if (!s)
+		return ((void)NULL);
 	while (s[k] != '\0')
 		k++;
 	ft_bzero(s, k);

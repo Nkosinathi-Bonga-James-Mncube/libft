@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:03:30 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/06 12:31:17 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 15:01:01 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ void	*ft_memccpy(void *dst, const void *scr, int c, size_t n)
 
 	s1 = (char*)dst;
 	s2 = (char*)scr;
-	if (n == 0)
+	if (n == 0 && scr == NULL)
 		return (s2);
 	while (n > 0)
 	{
-		if (*s2 == c)
+		if (*s2 == (char)c)
 		{
 			*s1 = *s2;
 			return ((void *)(s1 + 1));

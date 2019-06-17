@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 14:40:20 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/14 14:48:42 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 13:14:29 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
+	if (!s)
+		return ((void)NULL);
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }

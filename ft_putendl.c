@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:08:20 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/11 12:17:47 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 13:10:16 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl(char const *s)
 {
 	int k;
 
+	if (!s)
+		return ((void)NULL);
 	k = 0;
 	while (s[k] != '\0')
 	{
