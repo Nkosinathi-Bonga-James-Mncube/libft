@@ -6,21 +6,13 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:16:47 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/06 16:41:25 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/17 10:23:51 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-size_t ft_strlen(const char *s)
-{
-	size_t k;
-	k = 0;
-	while(s[k]!='\0')
-		k++;
-	return (k);
-}
 void	*ft_memmove(void *dst, const void *scr, size_t len)
 {
 	char	*s1;
