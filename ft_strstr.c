@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 14:18:14 by nmncube           #+#    #+#             */
-/*   Updated: 2019/05/30 16:00:15 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/18 13:17:43 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,23 @@
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int bfound;
-	int k;
+	const char *s1;
+	const char *s2;
 
-	bfound = 0;
-	k = 0;
-	if (needle[0] == '\0')
+	if (*needle == '\0')
 		return ((char*)haystack);
-	while (*haystack != *needle && *haystack != '\0')
-		haystack++;
-	while (needle[k] != '\0')
+	while (*haystack != '\0')
 	{
-		if (haystack[k] == needle[k])
-			k++;
-		else
+		s1 = haystack;
+		s2 = needle;
+		while (*s1 == *s2 && *s2 != '\0')
 		{
-			bfound = 1;
-			break ;
+			s1++;
+			s2++;
 		}
+		if (*s2 == '\0')
+			return ((char*)haystack);
+		haystack++;
 	}
-	if (bfound == 0)
-		return ((char*)haystack);
-	else
-		return (NULL);
+	return (0);
 }
