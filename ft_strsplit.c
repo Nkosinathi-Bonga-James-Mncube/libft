@@ -1,89 +1,90 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-static char *ft_store (char *store, char *s,char c)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/19 12:55:44 by nmncube           #+#    #+#             */
+/*   Updated: 2019/06/19 13:14:02 by nmncube          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static	char	*ft_store(char *store, char *s, int p, char c)
 {
-	int k;
+	int	k;
+
 	k = 0;
-	while(s[k] != c)
+	while (s[p] != c)
 	{
-		store[k] = s[k];
+		store[k] = s[p];
+		p++;
 		k++;
 	}
-	return(store);
+	store[k] = '\0';
+	return (store);
 }
-static int ft_s_strlen(char *s, char c)
+
+static	int		ft_s_strlen(char *s, char c)
 {
 	int k;
+
 	k = 0;
 	while (s[k] != c)
 		k++;
 	return (k);
 }
-static int ft_c_len(char *s, char c)
+
+static	int		ft_c_len(char *s, char c)
 {
 	int j;
+
 	j = 0;
 	while (*s == c)
 		s++;
-	while (*s!= '\0')
+	while (*s != '\0')
 	{
-		if (s[0] != c && (s[1] == c ||s[1] == '\0'))
+		if (s[0] != c && (s[1] == c || s[1] == '\0'))
 			j++;
-		if (*s != c)
-			s++;
-		if (*s == c)
-			s++;
+		s++;
 	}
 	return (j);
 }
-static char *ft_c_pos(char *s, char c)
-{
-	while (*s != c)
-		s++;
-	while (*s == c)
-		s++;
-	return (s);
-}
-void ft_strsplit(char const *s, char c)
-{
-       char *m;
-       char **here;
-       char *store;
-       int k;
-       int j;
-       int p; //remove only for testing purposes!
 
-       j = 0;
-       p = 0;
-       m = (char*)s;
-       k =ft_c_len(m , c);
-       here = (char**)malloc(k * sizeof(char*));
-	while (*s == c)
-		s++;
-	m = (char*)s;	
-	//store=(char*)malloc(ft_s_strlen((char*)s,c) * sizeof(char));
-	while (j < k)
+static	int		ft_c_pos(char *s, int p, char c)
+{
+	while (s[p] != c)
+		p++;
+	while (s[p] == c)
+		p++;
+	return (p);
+}
+
+char			**ft_strsplit(char const *s, char c)
+{
+	char	**here;
+	char	*store;
+	int		j;
+	int		p;
+
+	j = 0;
+	p = 0;
+	if (!s || !c)
+		return (NULL);
+	here = (char**)malloc(ft_c_len((char*)s, c) * sizeof(char*));
+	if (here == NULL)
+		return (NULL);
+	while (s[p] == c)
+		p++;
+	while (j < ft_c_len((char*)s, c))
 	{
-		m = s
-		store=(char*)malloc(ft_s_strlen((char*)s,c) * sizeof(char));	
-		here[j] =ft_store(store,(char*)m,c);
-		ft_c_pos((char*) m,c);
+		store = (char*)malloc(ft_s_strlen((char*)s, c) * sizeof(char));
+		here[j] = ft_store(store, (char*)s, p, c);
+		p = ft_c_pos((char*)s, p, c);
 		j++;
 	}
-       printf("Value : %d\n" , k);
-       while (p < j)
-       {
-	       printf("Store block[%d] %s\n" , p,here[p]);
-	       p++;
-       }
-}
-int main()
-{
-	const char *s;
-	s = "*hello*fellow**students*****";
-	ft_strsplit(s, '*');
-	//printf("Value : %d\n" , ft_c_len((char*)s,'*'));
-	//printf("Count: %d\n",ft_count(s, '*'));
-	return(0);
+	here[j] = (char *)'\0';
+	return (here);
 }
