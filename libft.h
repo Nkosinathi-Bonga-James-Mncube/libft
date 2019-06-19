@@ -6,15 +6,16 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/19 12:58:50 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 14:46:29 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
+
+# include <string.h>
+# include <stdio.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -61,13 +62,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
-char 	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
-void	ft_putendl_fd(char const *s,int fd);
+void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
-int	ft_int_len(int n);
-char	*ft_loop(int i, char *m, long int n , int k);
+int		ft_int_len(int n);
+char	*ft_loop(int i, char *m, long int n, int k);
 #endif
