@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:46:18 by event             #+#    #+#             */
-/*   Updated: 2019/06/04 13:26:20 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 15:17:56 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int		ft_bfound(char *c)
+static	int		ft_bfound(char *c)
 {
 	int bfound;
 
@@ -26,7 +26,7 @@ int		ft_bfound(char *c)
 	return (bfound);
 }
 
-int		ft_atoi(const char *str)
+int				ft_atoi(const char *str)
 {
 	int bfound;
 	int value;
