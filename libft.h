@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 11:44:56 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/19 14:48:03 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 15:05:36 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdio.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
