@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 11:03:35 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/17 16:22:43 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 15:00:05 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	*ft_memcpy(void *dst, const void *scr, size_t n)
 	unsigned char	*s2;
 
 	if (!dst && !scr)
-		return(NULL);
-
+		return (NULL);
 	s1 = (unsigned char*)scr;
 	s2 = (unsigned char*)dst;
 	j = 0;

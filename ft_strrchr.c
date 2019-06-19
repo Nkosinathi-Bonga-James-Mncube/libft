@@ -6,21 +6,22 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:46:13 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/01 14:33:45 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 15:04:54 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
-{	
+{
 	int k;
+
 	k = ft_strlen(s);
 	while (k >= 0)
 	{
 		if (s[k] == c)
-			return((char*)&s[k]);
+			return ((char*)&s[k]);
 		k--;
-	}		
+	}
 	return (0);
 }

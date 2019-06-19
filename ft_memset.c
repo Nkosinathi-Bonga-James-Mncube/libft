@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 09:46:35 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/17 10:59:47 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/19 14:57:46 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char *s1;
-	s1 = b;
 
+	s1 = b;
 	while (len > 0)
 	{
 		len--;
