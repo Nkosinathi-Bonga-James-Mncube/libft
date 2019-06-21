@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 09:47:32 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/18 15:46:37 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/21 10:08:32 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t l)
 	size_t m;
 
 	if (ft_strlen(dst) >= l)
-		return (l + ft_strlen(src));
+		return (l + ft_strlen(src));	
 	if (l == 0)
 		return (ft_strlen(src));
 	k = ft_strlen(src);
