@@ -17,7 +17,7 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n)
 	int k;
 
 	k = 0;
-	while (n > 0 && s1 != '\0' && s2 != '\0')
+	while (n > 0 && (s1[k] != '\0' || s2[k] != '\0'))
 	{
 		if (s1[k] == s2[k])
 			k++;
