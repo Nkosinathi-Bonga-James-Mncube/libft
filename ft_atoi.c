@@ -14,16 +14,17 @@
 #include <stdio.h>
 #include <string.h>
 
+static int ft_num(char c)
+{	
+	if (c >= 48 && c <= 57)
+		return (c);
+	return (0);
+}
 static	int		ft_bfound(char *c)
 {
-	int bfound;
-
-	bfound = 0;
 	if (c[0] == '-')
-		bfound = 1;
-	if (c[0] == '+')
-		bfound = 0;
-	return (bfound);
+		return (1);
+	return (0);
 }
 
 int				ft_atoi(const char *str)
@@ -44,7 +45,7 @@ int				ft_atoi(const char *str)
 		bfound = ft_bfound((char*)str);
 		str++;
 	}
-	while ((str[k] >= 48 && str[k] <= 57) && (str[k] != '+' || str[k] != '-') && str[k] != '\0')
+	while (ft_num(str[k]) != 0 && (str[k] != '+' || str[k] != '-') && str[k] != '\0')
 	{
 		value = (value * 10) + str[k] - 48;
 		k++;
