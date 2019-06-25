@@ -11,80 +11,62 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static	char	*ft_store(char *store, char *s, int p, char c)
-{
-	int	k;
-
-	k = 0;
-	while (s[p] != c)
-	{
-		store[k] = s[p];
-		p++;
-		k++;
-	}
-	store[k] = '\0';
-	return (store);
-}
-
-static	int		ft_s_strlen(char *s, char c)
+static	int ft_num(char *s, char c)
 {
 	int k;
+	int j;
 
+	if (!s || !c)
+		return (0);
 	k = 0;
-	while (s[k] != c)
+	j = 0;
+
+	while (s[k] != '\0')
+	{
+		if (s[k + 1] == c && s[k] != c)
+			j++;
+		k++;
+	}
+	if (j > 0)
+		j++;
+	return (j);
+
+}
+static	int ft_word(char const *s, char c)
+{
+	size_t k;
+
+	if (!s || !c)
+		return (0);
+	k = 0;
+	while (*s++ != c && *s != '\0')
 		k++;
 	return (k);
 }
-
-static	int		ft_c_len(char *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
-	int j;
-
-	j = 0;
-	while (*s == c)
-		s++;
-	while (*s != '\0')
-	{
-		if (s[0] != c && (s[1] == c || s[1] == '\0'))
-			j++;
-		s++;
-	}
-	return (j);
-}
-
-static	int		ft_c_pos(char *s, int p, char c)
-{
-	while (s[p] != c)
-		p++;
-	while (s[p] == c)
-		p++;
-	return (p);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-	char	**here;
-	char	*store;
-	int		j;
-	int		p;
-
-	j = 0;
-	p = 0;
-	if (!s || !c)
+	char	**store;
+	int	k;
+	int	j;
+	
+	k = 0;
+	j = ft_num((char*)s,c) + 1;
+	if (!s || !c || !(store =(char**)malloc(sizeof(char*) * j)))
 		return (NULL);
-	here = (char**)malloc(ft_c_len((char*)s, c) * sizeof(char*));
-	if (here == NULL)
-		return (NULL);
-	while (s[p] == c)
-		p++;
-	while (j < ft_c_len((char*)s, c))
+	while (*s != '\0' )
 	{
-		store = (char*)malloc(ft_s_strlen((char*)s, c) * sizeof(char));
-		here[j] = ft_store(store, (char*)s, p, c);
-		p = ft_c_pos((char*)s, p, c);
-		j++;
+		while (*s != c && *s != '\0')
+			s++;
+		if (*s != c && *s != '\0')
+		{
+			if (!(store[k] = ft_memalloc(ft_word(s,c) + 1)))
+				return (NULL);
+			j = 0;
+			while (*s != '\0' && *s != c)
+				store[k][j++] = (char)*s++;
+			store[k++][j]= '\0';
+		}
 	}
-	here[j] = (char *)'\0';
-	return (here);
+	store[k] = NULL;
+	return (store);	
 }
