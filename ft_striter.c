@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 11:20:32 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/17 14:30:14 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 10:55:06 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	ft_striter(char *s, void (*f)(char *))
 	int k;
 
 	k = 0;
-	if (!s)
-		return ((void)NULL);
+	if (!s || !f)
+		return ;
 	while (s[k] != '\0')
 	{
 		f(&s[k]);

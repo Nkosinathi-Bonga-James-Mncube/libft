@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:04:09 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/12 13:37:03 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 10:43:21 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ int	ft_strcmp(const char *s1, const char *s2)
 	{
 		if (*s1 != *s2)
 		{
-			return ((unsigned char)*s1 - (unsigned char)*s2);
-			break ;
+			if ((unsigned char)*s1 - (unsigned char)*s2 < 0)
+				return (-1);
+			else
+				return (1);
 		}
 		s1++;
 		s2++;
