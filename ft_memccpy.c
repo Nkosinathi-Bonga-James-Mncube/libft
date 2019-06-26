@@ -6,20 +6,20 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:03:30 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/17 15:01:01 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 12:31:30 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *scr, int c, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	char	*s1;
 	char	*s2;
 
 	s1 = (char*)dst;
-	s2 = (char*)scr;
-	if (n == 0 && scr == NULL)
+	s2 = (char*)src;
+	if (n == 0 && src == NULL)
 		return (s2);
 	while (n > 0)
 	{
