@@ -6,21 +6,20 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:16:47 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/19 15:00:45 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 11:58:41 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memmove(void *dst, const void *scr, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char *scr1;
 	char *dst1;
 
 	if (!dst && !scr)
 		return (NULL);
-	scr1 = (char*)scr;
+	scr1 = (char*)src;
 	dst1 = (char*)dst;
 	if (scr1 < dst1)
 	{
