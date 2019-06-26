@@ -6,13 +6,11 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:46:18 by event             #+#    #+#             */
-/*   Updated: 2019/06/23 11:07:19 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 11:29:34 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 static int	ft_num(char c)
 {
