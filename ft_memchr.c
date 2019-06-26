@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:16:37 by nmncube           #+#    #+#             */
-/*   Updated: 2019/06/26 10:38:03 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/26 13:15:00 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	s1 = (unsigned char *)s;
 	c1 = (unsigned char)c;
-	while ( n > 0 && *s1 != c1)
+	while (n > 0 && *s1 != c1)
 	{
 		n--;
 		s1++;
