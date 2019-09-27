@@ -6,7 +6,7 @@
 /*   By: nmncube <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 09:31:55 by nmncube           #+#    #+#             */
-/*   Updated: 2019/07/05 12:08:13 by nmncube          ###   ########.fr       */
+/*   Updated: 2019/06/07 15:44:39 by nmncube          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[k] = src[k];
 		k++;
 	}
-	dst[k] = '\0';
+	while (k < len)
+	{
+		dst[k] = '\0';
+		k++;
+	}
 	return (dst);
 }
