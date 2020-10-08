@@ -6,9 +6,7 @@ Langauages used:
  - C
  
  Requirements of the project:
- - Given the prototype for function student and re-create behaviors as the originals
+ - Student are given the prototype for functions and must re-create behaviors as the originals
  - Heap allocated memory space must be properly freed when necessary (e.g use for Malloc)
  
- 
- 
-List of functions:
+ Example for functions:
