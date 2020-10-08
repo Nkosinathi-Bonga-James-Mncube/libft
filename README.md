@@ -1,10 +1,14 @@
 # libft
-# What is LIB_ft?
-- Recreating standard library functions in C lanuage
+# What is LIBFT?
+- Recreating 28 standard library functions in C lanuage
 
 Langauages used:
  - C
  
  Requirements of the project:
- 1) Heap allocated memory space must be properly freed when necessary (e.g use for Malloc)
- 2)
+ - Given the prototype for function student and re-create behaviors as the originals
+ - Heap allocated memory space must be properly freed when necessary (e.g use for Malloc)
+ 
+ 
+ 
+List of functions:
