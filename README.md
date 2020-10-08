@@ -10,3 +10,4 @@ Langauages used:
  - Heap allocated memory space must be properly freed when necessary (e.g use for Malloc)
  
  Example for functions:
+ - aoti    - strlen
