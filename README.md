@@ -46,7 +46,7 @@
  4. Add a function from `libft.h` folder e.g (`ft_putstr("Hello World")`) <- `ft_putstr` is a LIBFT function to display a string to standard output
  5. To compile file type:
  ```C
- gcc test1.c libft/libft.a
+ gcc test.c libft/libft.a
  ```
  6. To execute file type:
  ```C
