@@ -1,9 +1,10 @@
 # libft
 # What is LIBFT?
+
+
+![wtc](https://user-images.githubusercontent.com/50704452/101298456-b6ba8a80-3836-11eb-8d68-e8e74b8897f5.gif)
 - Recreating 28 standard library functions in C lanuage
 - Project based on WTC code curriculum
-![wtc](https://user-images.githubusercontent.com/50704452/101298456-b6ba8a80-3836-11eb-8d68-e8e74b8897f5.gif)
-
 - More info on WTC: https://www.wethinkcode.co.za/
 
 # Language used
