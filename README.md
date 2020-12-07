@@ -25,7 +25,7 @@
  
 # Installation
  > NOTE: Alternative.gif step-by-step instructions at the bottom too
- 1. Clone repo
+ 1. `git clone` repo
  2. Enter `/libft` folder
  3. To compile Makefile type:
  ```C
