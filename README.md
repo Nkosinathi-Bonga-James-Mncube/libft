@@ -2,10 +2,12 @@
 # What is LIBFT?
 
 
-![wtc](https://user-images.githubusercontent.com/50704452/101298456-b6ba8a80-3836-11eb-8d68-e8e74b8897f5.gif)
+![wtc](https://user-images.githubusercontent.com/50704452/101298456-b6ba8a80-3836-11eb-8d68-e8e74b8897f5.gif) ![42](https://user-images.githubusercontent.com/50704452/101329754-77159200-387a-11eb-8c1a-c929b9050800.png)
 - Recreating 28 standard library functions in C lanuage
-- Project based on WeThinkCode coding curriculum
+- Project done at WeThinkCode (based on 42 france coding curriculum)
 - More info on WeThinkCode: https://www.wethinkcode.co.za/
+- More info on 42 school(US based school English site): https://www.42.us.org/
+- More info on 42 school(France based school French site): https://www.42.fr/
 
 # Language used
 ![c_programming2](https://user-images.githubusercontent.com/50704452/101298658-bff82700-3837-11eb-82ea-529432360815.jpg)
