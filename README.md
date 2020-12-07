@@ -24,7 +24,7 @@
  
  
 # Installation
- > NOTE: Alternative.gif step-by-step instructions at the bottom too
+ > NOTE: Alternatively .gif step-by-step instructions at the bottom too
  1. `git clone` repo
  2. Enter `/libft` folder
  3. To compile Makefile type:
@@ -33,7 +33,7 @@
  ```
  
  #### To test LIBFT library
- > NOTE: Alternative .gif step-by-step instructions at the bottom too
+ > NOTE: Alternatively .gif step-by-step instructions at the bottom too
  1. Inside git root folder(outside of `libft` folder)create a file 'eg. `test.c`
  2. Open `test.c` and add library header`#include 'libft/libft.h'`
  3. Create a int main()
