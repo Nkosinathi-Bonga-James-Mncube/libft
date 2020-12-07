@@ -4,8 +4,8 @@
 
 ![wtc](https://user-images.githubusercontent.com/50704452/101298456-b6ba8a80-3836-11eb-8d68-e8e74b8897f5.gif)
 - Recreating 28 standard library functions in C lanuage
-- Project based on WTC code curriculum
-- More info on WTC: https://www.wethinkcode.co.za/
+- Project based on WeThinkCode coding curriculum
+- More info on WeThinkCode: https://www.wethinkcode.co.za/
 
 # Language used
 ![c_programming2](https://user-images.githubusercontent.com/50704452/101298658-bff82700-3837-11eb-82ea-529432360815.jpg)
