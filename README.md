@@ -34,7 +34,7 @@
  ```
  5. Go back to `/test_libft`
  
- #### To test LIBFT library
+ #### To use LIBFT library
  > NOTE: Alternatively .gif step-by-step instructions at the bottom too
  1. Inside `/test_libft` create a file 'eg. `test.c`
  2. Open `test.c` and add library header`#include 'libft/libft.h'`
@@ -53,8 +53,8 @@
  - `make re` - recompile library when changes are made to functions
  - `make clean` - removes all function objects
  - `make fclean` - removes all function objects created with library object
- # Demo of Installation and Testing library
+ # Demo of installation and using library
  ### Installation
  ![makefile](https://user-images.githubusercontent.com/50704452/101298031-a1446100-3834-11eb-90eb-3f502ce13a29.gif)
-  ### Test library
+  ### Using library
   ![output](https://user-images.githubusercontent.com/50704452/101298118-1adc4f00-3835-11eb-923e-278d15634e4f.gif)
