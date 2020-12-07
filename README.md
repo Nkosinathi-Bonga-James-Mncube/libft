@@ -16,7 +16,7 @@
  - Student are given the prototype for functions and must re-create behaviors as the originals
  - Heap allocated memory space must be properly freed when necessary (e.g use for Malloc)
  - A Makefile must be used to create a static library called `libft.a`
- - To use library the header `libft.h` is  used
+ - To use functions in library the header `libft.h` is  used
  
  To get a full detail list, please refer to the pdf:
  
