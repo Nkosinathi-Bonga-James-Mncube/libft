@@ -36,7 +36,7 @@
  
  #### To use LIBFT library
  > NOTE: Alternatively .gif step-by-step instructions at the bottom too
- 1. Inside `/test_libft` create a file 'eg. `test.c`
+ 1. Inside `/test_libft` create a .c file 'eg. `test.c`
  2. Open `test.c` and add library header`#include 'libft/libft.h'`
  3. Create a int main()
  4. Add a function from `libft.h` folder e.g (`ft_putstr("Hello World")`) <- `ft_putstr` is a LIBFT function to display a string to standard output
