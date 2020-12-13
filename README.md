@@ -14,7 +14,7 @@
 <!-- TOC -->
   1. [Requirements of the project](#requirements-of-the-project)
   2. [Installation(Demo)](#installation)
-  3. [How to run libft(Demo)](#to-use-libft-library)
+  3. [How to use libft library(Demo)](#to-use-libft-library)
   
  <!-- /TOC -->
  ***
