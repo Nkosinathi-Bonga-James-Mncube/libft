@@ -12,8 +12,9 @@
 ***
 # Table of contents
 <!-- TOC -->
-  1. [Installation(Demo)](#installation)
-  2. [How to run libft(Demo)](#to-use-libft-library)
+  1. [Requirements of the project](#requirements-of-the-project)
+  2. [Installation(Demo)](#installation)
+  3. [How to run libft(Demo)](#to-use-libft-library)
   
  <!-- /TOC -->
  ***
