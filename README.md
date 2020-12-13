@@ -14,7 +14,7 @@
 <!-- TOC -->
   1. [Requirements of the project](#requirements-of-the-project)
   2. [Installation](#installation)
-  3. [How to use libft library](#to-use-libft-library)
+  3. [How to use libft library](#how-to-use-libft-library)
   
  <!-- /TOC -->
  ***
@@ -41,7 +41,7 @@
  ```
  5. Go back to `/test_libft`
  ***
- # To use LIBFT library
+ # How to use libft library
  ![output](https://user-images.githubusercontent.com/50704452/101298118-1adc4f00-3835-11eb-923e-278d15634e4f.gif)
  1. Inside `/test_libft` create a .c file (e.g.`test.c`)
  2. Open `test.c` and add library header`#include 'libft/libft.h'`
