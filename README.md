@@ -28,7 +28,7 @@
  - Heap allocated memory space must be properly freed when necessary (e.g use for `Malloc`)
  - A `Makefile` must be used to create a static library called `libft.a`
  - To use functions in library the header `libft.h` is  used
- - To get a full project detail list, please refer to the [pdf](https://drive.google.com/file/d/1TfamMsyEViL0BiF7JoecFWGvTHw0mruV/view)
+ - To get a full project outline please refer to the [pdf](https://drive.google.com/file/d/1TfamMsyEViL0BiF7JoecFWGvTHw0mruV/view)
  
 # Installation
  ![makefile](https://user-images.githubusercontent.com/50704452/101298031-a1446100-3834-11eb-90eb-3f502ce13a29.gif)
