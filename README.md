@@ -55,7 +55,11 @@
  ```C
  ./a.out
  ```
- 7. You should see `Hello World` displayed to standard output
+ 7. You should see 
+ ```
+ Hello World
+ ``` 
+ displayed to standard output
 # Makefile commands
  - `make re` - recompile library when changes are made to functions
  - `make clean` - removes all function objects
